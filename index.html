@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Arquivo para testar CORS na aplicação</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container">
+
+    <h1>Arquivo para testar CORS na aplicação</h1>
+
+    <div class="token-input-container">
+      <label class="token-label" for="urlInput">Url</label>
+      <input class="token-input" type="text" id="urlInput" placeholder="Insira a Url">
+    </div>
+    
+    <div class="token-input-container">
+      <label class="token-label" for="methodInput">Method</label>
+      <input class="token-input" type="text" id="methodInput" placeholder="Insira o tipo do metodo ex: 'GET'">
+    </div>
+
+    <label class="token-label" for="tokenInput">Headers:</label>
+    <div class="token-input-container">
+      <b>
+      <div class="header-row">
+        <input class="header-1" type="text" id="header-1" placeholder="Authorization">
+        <input class="header-value-1" type="text" id="header-value-1" placeholder="Bearer token">
+      </div>
+      <b>
+      <div class="header-row">
+        <input class="header-2" type="text" id="header-2" placeholder="Origin">
+        <input class="header-value-2" type="text" id="header-value-2" placeholder="http://192.168.0.187:8000">
+      </div>
+    
+      <div class="header-row">
+        <input class="header-3" type="text" id="header-3" placeholder="Cache-Control">
+        <input class="header-value-3" type="text" id="header-value-3" placeholder="no-cache">
+      </div>
+    </div>
+
+    <label class="input-label" for="jsonInput">Insira o JSON:</label>
+    <textarea class="input-textarea" id="jsonInput" rows="10" placeholder="{}"></textarea>
+
+    <button id="btnRequest">Fazer Requisição</button>
+
+    <div class="result" id="resultado"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

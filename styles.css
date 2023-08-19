@@ -1,0 +1,111 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  .token-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .token-label {
+    margin-right: 10px;
+  }
+
+  .token-input {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    color: black; 
+    background-color: #8accec;
+  }
+
+  button:hover {
+    transform: scale(1.15); 
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .result {
+    width: 95%;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: auto;
+    max-height: 200px;
+    resize: both;
+    border-color: #06a9ea; 
+    display: none;
+  } 
+
+  .token-input-container {
+    margin-bottom: 20px;
+  }
+
+  .headers-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .header-row input {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .token-label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .token-input {
+    border-color: #06a9ea; 
+  }
+
+/* Estilo para quando os campos tiverem conteúdo */
+  .header-row input:not([placeholder=""]) {
+    border-color: #06a9ea; 
+  }
+
+  .input-label {
+    margin-bottom: 5px;
+  }
+
+  .input-textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: 10px;
+    border-color: #06a9ea; 
+  }
+
+  #urlInput{
+    margin-left: 35px;
+  }
