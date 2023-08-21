@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const urlInput = document.getElementById("urlInput").value;
       const methodInput = document.getElementById("methodInput").value.toUpperCase();
       const jsonInput = document.getElementById("jsonInput").value.trim(); 
-      var body;
+      var requestOptions;
 
       const body = parseJSONInput(jsonInput);
 
@@ -44,11 +44,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
 
-      const requestOptions = {
-        method: methodInput,
-        headers: headers,
-        body: body
-      };
+      if (body != null) {
+        requestOptions = {
+          method: methodInput,
+          headers: headers,
+          body: body
+        };  
+      } else {
+        requestOptions = {
+          method: methodInput,
+          headers: headers
+        }
+      }
 
       log(requestOptions)
 
@@ -97,5 +104,3 @@ function log(options) {
         console.log(key + ": " + value);
   });
 }
-//  {"email": "luis@test.com","senha": "senha"}
-//  http://localhost:8080/auth/login
